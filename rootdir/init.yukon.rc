@@ -433,3 +433,8 @@ service charger /sbin/healthd -c
     class charger
     critical
     seclabel u:r:healthd:s0
+
+on property:init.svc.bootanim=running
+    # Clear Sony boot splash
+    write /sys/class/graphics/fb0/blank 1
+    write /sys/class/graphics/fb0/blank 0
