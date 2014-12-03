@@ -39,7 +39,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/sony/recovery/custombootimg.mk
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dt_dir device/sony/$(TARGET_DEVICE)/dtbs --dt_version 2
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=yukon user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=yukon user_debug=30 msm_rtb.filter=0x37 androidboot.selinux=permissive
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
