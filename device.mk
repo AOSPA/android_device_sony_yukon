@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default
 
 
+# Power
+PRODUCT_PACKAGES += \
+    power.yukon
+
 #GPS
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -177,4 +181,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Get the long list of apns
 PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
+# QC Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
