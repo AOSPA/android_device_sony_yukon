@@ -96,6 +96,8 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 TARGET_SYSTEM_PROP := device/sony/yukon/system.prop
 
+# SELinux
+include device/sony/sepolicy/sepolicy.mk
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
