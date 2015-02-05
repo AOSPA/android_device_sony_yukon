@@ -115,13 +115,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.yukon
 
+ifneq ($(FLAMINGO_BAD_NFC),true)
 # NFC packages
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     Tag \
     nfc_nci.pn54x.default
-
+endif
 
 # Power
 PRODUCT_PACKAGES += \
