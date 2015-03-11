@@ -101,6 +101,9 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libqdMetaData
 
+PRODUCT_PACKAGES += \
+    libion
+
 #OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -157,8 +160,7 @@ PRODUCT_PACKAGES += \
 #OSS
 PRODUCT_PACKAGES += \
     thermanager \
-    wcnss_addr \
-    bt_addr
+    addrsetup
 
 #Charger
 PRODUCT_PACKAGES += \
